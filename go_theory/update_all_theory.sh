@@ -1,3 +1,11 @@
+#!/bin/bash
+
+echo "Creating comprehensive theory files with deep design rationale..."
+echo "This will take some time - creating 20 detailed theory documents"
+
+# Topic 02: Data Types
+cd 02_data_types_and_variables/basic
+cat > theory.md << 'EOFDOC'
 # Data Types and Variables - Theory with Design Rationale
 
 ## Zero Values: Go's Safety Net
@@ -830,3 +838,7 @@ f := toFahrenheit(Celsius(32))  // Must be explicit
 - [Go Blog - Strings](https://go.dev/blog/strings)
 - [Effective Go - Data](https://go.dev/doc/effective_go#data)
 
+EOFDOC
+
+echo "Topic 02 done"
+cd ../../..
