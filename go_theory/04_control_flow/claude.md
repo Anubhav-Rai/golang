@@ -1,25 +1,25 @@
-# Task: Create Go Theory Content for Control Flow
+# Task: Create Go Control Flow Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Explain how Go simplified and improved control structures vs C/C++.
 
-## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "Control Flow" topic
+## What to Create
+Theory covering:
+- If without parentheses (cleaner syntax - why remove them?)
+- If with initialization (scoping benefit)
+- For as ONLY loop construct (no while, no do-while - radical choice)
+- Range-based for (vs C++11 range-for)
+- Switch improvements: no fallthrough by default, any expression in cases
+- Type switch (unique Go feature)
+- Defer (vs RAII, finally)
+- Break, continue, goto, labels
+- NO ternary operator (forces clarity)
+
+## Design Philosophy to Explore
+- Why only one loop type? (Simplicity philosophy)
+- Why no automatic fallthrough in switch? (Common C bug)
+- How does defer compare to RAII?
+- What does simplicity cost vs gain?
 
 ## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
-
-## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+Theory.md files in subfolders with comparative examples.

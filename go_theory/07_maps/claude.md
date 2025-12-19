@@ -1,25 +1,26 @@
-# Task: Create Go Theory Content for Maps
+# Task: Create Go Maps Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Explain why Go made maps a first-class built-in type vs C++ library approach.
 
-## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "Maps" topic
+## What to Create
+Theory covering:
+- Built-in hash map (vs std::unordered_map in library)
+- Why first-class in language? (Pragmatism philosophy)
+- Reference semantics (vs C++ value semantics)
+- Comma-ok idiom for existence checking
+- No ordering guarantees (iteration randomization - security reason)
+- Map initialization (make, literals)
+- Delete operation built-in
+- Thread safety (not thread-safe by design)
+- Maps of maps and complex structures
+- Performance characteristics vs C++ containers
+
+## Design Philosophy
+- Why make maps built-in vs library? (Pragmatic vs ideological)
+- How does Go's pragmatism differ from C++ "don't pay for what you don't use"?
+- Why randomize iteration? (Security consideration)
+- Common usage patterns
 
 ## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
-
-## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+Theory.md in subfolders with practical examples.

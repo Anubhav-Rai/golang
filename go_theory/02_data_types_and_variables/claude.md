@@ -1,25 +1,26 @@
-# Task: Create Go Theory Content for Data Types And Variables
+# Task: Create Go Data Types and Variables Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Create comprehensive theory on Go's type system for C/C++ developer interested in language design.
 
-## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "Data Types And Variables" topic
+## What to Create
+Subfolders with theory.md files covering:
+- Why explicit int sizes (int8, int16, int32, int64) AND platform-dependent int
+- Zero values design (safety implications vs C/C++)
+- Type inference (:= vs C++11 auto) - similarities and differences
+- NO implicit type conversions (design choice)
+- Strings as first-class types (vs char* in C)
+- UTF-8 by default (modern design)
+- Runes vs chars (Unicode handling)
+- Type aliases vs type definitions
+- Named vs unnamed types
+
+## Deep Design Questions to Answer
+- Why force explicit conversions? (Safety vs convenience)
+- Why zero values? (Prevents entire class of bugs)
+- How does this make Go safer than C/C++?
+- What flexibility is lost vs gained?
 
 ## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
-
-## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+basic/, intermediate/, advanced/ theory.md as needed.
+Theory + examples in same file.

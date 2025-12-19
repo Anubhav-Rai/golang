@@ -1,25 +1,31 @@
-# Task: Create Go Theory Content for Error Handling
+# Task: Create Go Error Handling Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Explain Go's controversial choice - no exceptions, errors as values.
 
-## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "Error Handling" topic
+## What to Create
+Theory on:
+- NO exceptions (most controversial design choice)
+- Errors as values (vs C error codes, vs C++ exceptions)
+- The error interface (simple design)
+- Multiple return values enable error returns
+- Explicit error checking (if err != nil pattern)
+- Verbosity vs explicitness tradeoff
+- Error wrapping (fmt.Errorf, %w, errors.Unwrap)
+- Custom error types and methods
+- Panic/recover (for exceptional cases only)
+- Panic vs C++ exceptions (different philosophy)
+- Defer for cleanup (vs RAII, vs try-finally)
+- When to panic vs return error
+
+## Controversial Design Discussion
+- Why NO exceptions? (Control flow visibility)
+- Explicit vs implicit error handling philosophy
+- Performance benefits (no exception overhead)
+- Readability debate (verbose vs hidden control flow)
+- How does this affect API design?
+- What C++ exception problems does this solve?
+- What conveniences are lost?
 
 ## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
-
-## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+Theory.md with error handling pattern comparisons.

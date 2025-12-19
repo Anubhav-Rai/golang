@@ -1,25 +1,32 @@
-# Task: Create Go Theory Content for Advanced Patterns
+# Task: Create Go Advanced Patterns Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Explain idiomatic Go patterns vs C++ design patterns - how Go features change design.
 
-## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "Advanced Patterns" topic
+## What to Create
+Theory on:
+- Functional options pattern (elegant API design)
+- Context package (cancellation, deadlines, request-scoped values)
+- Worker pool pattern (goroutine management)
+- Pipeline patterns (channel composition)
+- Middleware pattern (HTTP handlers, function wrapping)
+- Singleton in Go (sync.Once)
+- Factory pattern with interfaces
+- Adapter pattern (implicit interface satisfaction)
+- Decorator pattern with composition
+- Error handling patterns (wrap, sentinel errors, error types)
+- Concurrency patterns (semaphores, barriers, rate limiting)
+- Fan-out/fan-in patterns
+- Timeout and cancellation patterns
+- Graceful shutdown patterns
+
+## Design Patterns Evolution
+- How Go's features enable different patterns than GoF
+- Comparison with C++ Gang of Four patterns
+- How interfaces change design approach
+- How goroutines and channels enable new patterns
+- Idiomatic Go patterns that don't exist in C++
+- Patterns from C++ that don't work in Go
 
 ## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
-
-## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+Theory.md with real-world pattern examples and comparisons.

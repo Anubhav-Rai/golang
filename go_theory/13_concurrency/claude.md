@@ -1,25 +1,30 @@
-# Task: Create Go Theory Content for Concurrency
+# Task: Create Go Concurrency Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Explain Go's revolutionary goroutines and CSP model vs C++ threading.
 
-## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "Concurrency" topic
+## What to Create
+Comprehensive theory on:
+- Goroutines vs OS threads (lightweight design)
+- M:N scheduling (how it works internally)
+- Stack growth (vs fixed thread stacks in C++)
+- "go" keyword (vs std::thread creation ceremony)
+- Communicating Sequential Processes (CSP) model
+- "Don't communicate by sharing memory; share memory by communicating"
+- sync.WaitGroup (vs thread joining)
+- sync.Mutex (simpler than C++ mutex/lock_guard)
+- Race detector (built-in tool)
+- Concurrency vs parallelism (GOMAXPROCS)
+- Context package for cancellation
+- Goroutine scheduling details
+
+## Revolutionary Design Analysis
+- Why goroutines as first-class language feature?
+- How CSP differs from shared-memory threading
+- What C++ threading bugs does this prevent?
+- Goroutine overhead vs thread overhead
+- Why this makes concurrent programming easier
+- Performance implications of green threads
 
 ## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
-
-## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+Theory.md with concurrency pattern comparisons.

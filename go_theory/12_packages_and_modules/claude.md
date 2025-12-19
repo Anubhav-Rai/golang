@@ -1,25 +1,31 @@
-# Task: Create Go Theory Content for Packages And Modules
+# Task: Create Go Packages and Modules Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Explain how Go solved C++'s compilation speed and header file problems.
 
-## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "Packages And Modules" topic
+## What to Create
+Theory on:
+- Packages vs headers/compilation units
+- NO header files (revolutionary for C++ developers)
+- Single-pass compilation (vs C++ multiple passes)
+- Import vs #include (semantic difference)
+- Circular dependencies prevented by design
+- Package-level visibility via capitalization
+- Exported/unexported convention IS the syntax
+- init() functions (vs C++ global constructors)
+- Package initialization order guarantees
+- Go modules vs package managers (npm, cargo comparison)
+- Semantic versioning built-in
+- go.mod vs Makefiles/CMake
+- Dependency resolution and minimal version selection
+
+## Design Revolution Discussion
+- How Go solved C++'s compilation speed problem
+- Why no header files? (DRY principle, faster compilation)
+- Preventing circular dependencies (vs C++ forward declarations)
+- Capitalization as access control (convention = syntax)
+- Module system design benefits
+- Comparison with C++20 modules
 
 ## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
-
-## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+Theory.md showing package organization and build system comparison.

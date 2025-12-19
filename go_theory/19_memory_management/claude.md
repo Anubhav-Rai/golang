@@ -1,25 +1,33 @@
-# Task: Create Go Theory Content for Memory Management
+# Task: Create Go Memory Management Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Explain Go's GC vs C++ manual memory management - safety vs control tradeoff.
 
-## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "Memory Management" topic
+## What to Create
+Theory on:
+- Automatic garbage collection (vs manual new/delete)
+- Safety vs control tradeoff
+- No use-after-free, no double-free (safety guarantee)
+- Garbage collector algorithm (concurrent mark-sweep)
+- GC pauses (stop-the-world moments)
+- Escape analysis (compiler optimization)
+- Stack vs heap allocation (compiler decides)
+- How to reason about allocations
+- new() vs make() (subtle difference)
+- Memory pooling (sync.Pool)
+- GOGC and GC tuning parameters
+- Performance implications vs C++
+- When GC becomes limiting factor
+- Unsafe package (manual control escape hatch)
+
+## Safety vs Performance Analysis
+- Design philosophy: safety over manual control
+- What entire classes of bugs are eliminated?
+- GC tradeoffs: pause times, throughput, memory overhead
+- How escape analysis minimizes heap allocations
+- When is Go's GC appropriate?
+- When would C++ manual control be better?
+- Real-world GC performance
 
 ## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
-
-## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+Theory.md with memory diagrams and allocation analysis.

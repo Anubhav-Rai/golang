@@ -1,25 +1,28 @@
-# Task: Create Go Theory Content for Arrays And Slices
+# Task: Create Go Arrays and Slices Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Explain Go's array/slice dichotomy and how it prevents C/C++ memory bugs.
 
-## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "Arrays And Slices" topic
+## What to Create
+Comprehensive theory on:
+- Arrays as VALUE types (vs C/C++ array decay to pointer)
+- Size as part of array type (design implication)
+- Slices as references (vs C++ vector)
+- Slice internals (ptr, len, cap - three-word structure)
+- Why this three-part structure?
+- Dynamic growth strategy (vs vector reallocation)
+- Copy semantics (deep vs shallow)
+- NO pointer arithmetic (safety)
+- Built-in functions: make, append, copy, len, cap
+- Subslicing and memory sharing (gotchas)
+- Pass by value vs pass by reference behavior
+
+## Design Deep Dive
+- Why separate arrays and slices? (Flexibility + safety)
+- How does this prevent buffer overflows?
+- What C/C++ bugs are impossible in Go?
+- Performance implications of slice growth
+- Memory diagrams essential
 
 ## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
-
-## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+Theory.md files with memory diagrams and comparative examples.

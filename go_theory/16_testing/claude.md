@@ -1,25 +1,31 @@
-# Task: Create Go Theory Content for Testing
+# Task: Create Go Testing Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Explain Go's built-in testing vs C++ external frameworks.
 
-## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "Testing" topic
+## What to Create
+Theory on:
+- Built-in testing (vs gtest, catch2, boost.test)
+- testing package simplicity
+- Naming conventions (*_test.go, Test*)
+- go test command integration
+- Table-driven tests (idiomatic Go pattern)
+- t.Error vs t.Fatal
+- Subtests (t.Run for organizing tests)
+- Test coverage built-in (vs gcov, lcov)
+- Benchmarking built-in (testing.B)
+- Example tests (documentation + verification)
+- TestMain for setup/teardown
+- Test helpers and t.Helper()
+- Parallel tests (t.Parallel)
+- Mocking strategies (interfaces enable easy mocking)
+
+## Design Philosophy
+- Why built-in testing? (Convention over configuration)
+- Simplicity vs C++ testing framework complexity
+- Table-driven tests pattern (data-driven testing)
+- How interface design enables testability
+- Benchmark as first-class citizen
 
 ## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
-
-## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+Theory.md with test pattern examples and comparisons.

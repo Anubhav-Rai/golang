@@ -1,25 +1,29 @@
-# Task: Create Go Theory Content for Pointers
+# Task: Create Go Pointers Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Explain Go's restricted pointers - safer than C/C++ but less flexible.
 
-## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "Pointers" topic
+## What to Create
+Theory on:
+- Pointers exist but restricted (safety design)
+- NO pointer arithmetic (huge difference from C/C++)
+- NO void* pointer (type safety)
+- Garbage collection (no manual free/delete)
+- Nil vs NULL/nullptr
+- & and * operators (familiar syntax)
+- Automatic dereferencing for struct fields (convenience)
+- NO references like C++ (design decision)
+- new() function (vs C++ new)
+- Can't get address of literals (why?)
+- Stack vs heap (compiler decides via escape analysis)
+- Unsafe package (escape hatch)
+
+## Safety vs Flexibility Analysis
+- What C/C++ pointer bugs are impossible in Go?
+- What flexibility is lost without pointer arithmetic?
+- How does GC change pointer usage patterns?
+- When would you miss C++ manual control?
+- Escape analysis and performance
 
 ## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
-
-## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+Theory.md with memory safety comparisons and examples.

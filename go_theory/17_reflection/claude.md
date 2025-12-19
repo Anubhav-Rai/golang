@@ -1,25 +1,31 @@
-# Task: Create Go Theory Content for Reflection
+# Task: Create Go Reflection Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Explain Go reflection vs C++ RTTI and template metaprogramming.
 
-## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "Reflection" topic
+## What to Create
+Theory on:
+- Built-in reflection (vs limited C++ RTTI)
+- reflect package (Type and Value)
+- Runtime type information (vs compile-time C++ templates)
+- Inspecting types at runtime
+- Modifying values through reflection
+- Struct tags usage (JSON, ORM, validation)
+- Three laws of reflection
+- interface{} and reflection relationship
+- TypeOf vs ValueOf
+- Kind vs Type distinction
+- Performance cost (vs zero-cost C++ compile-time)
+- When to use/avoid reflection
+- Reflection for generic behavior (before generics)
+
+## Design Tradeoffs
+- How reflection enables runtime flexibility
+- Runtime cost vs compile-time safety
+- Comparison with C++ template metaprogramming
+- Why Go needed runtime reflection
+- When reflection is appropriate
+- Type erasure and type assertions
 
 ## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
-
-## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+Theory.md with reflection pattern examples and performance discussion.

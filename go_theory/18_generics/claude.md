@@ -1,25 +1,33 @@
-# Task: Create Go Theory Content for Generics
+# Task: Create Go Generics Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Explain Go generics (Go 1.18+) vs C++ templates - simpler but less powerful.
 
-## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "Generics" topic
+## What to Create
+Comprehensive theory on:
+- Late addition to Go (why the 13-year delay?)
+- Type parameters syntax [T any]
+- Generic functions vs C++ function templates
+- Generic types vs C++ class templates
+- Constraints vs C++ concepts/SFINAE
+- Interface-based constraints (Go's approach)
+- ~T approximation constraint
+- any constraint (vs template<typename T>)
+- comparable constraint (built-in)
+- Type inference (similar to C++)
+- NO template specialization (design choice)
+- NO variadic type parameters like C++
+- Compile-time instantiation (monomorphization)
+- Performance implications
+
+## Design Philosophy Deep Dive
+- Why Go waited 13 years to add generics
+- Design goals: simplicity over power
+- Simpler but less powerful than C++ templates
+- No Turing-complete metaprogramming (intentional)
+- Tradeoffs: expressiveness vs complexity
+- When to use generics vs interfaces?
+- What C++ template techniques don't work in Go?
 
 ## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
-
-## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+Theory.md comparing with C++ templates extensively.

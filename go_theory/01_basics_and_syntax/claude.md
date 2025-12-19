@@ -1,25 +1,33 @@
-# Task: Create Go Theory Content for Basics And Syntax
+# Task: Create Go Basics and Syntax Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Create comprehensive theory files for Go basics and syntax, targeting a C/C++ developer who wants to understand both Go AND language design principles.
+
+## What to Create
+Create subfolders (basic/, intermediate/, advanced/) with ONE `theory.md` file in each that contains:
+- Detailed explanations comparing Go to C/C++
+- WHY Go made different design choices (design philosophy)
+- Code examples inline with explanations
+- Deep dive into language design rationale
+
+## Topics to Cover
+- Package system (vs C/C++ headers, #include)
+- Entry point: main() function and package main
+- Variable declarations (var, :=, type inference vs C++)
+- Type system philosophy (explicit vs implicit)
+- Constants and iota
+- Zero values (safety vs C/C++ uninitialized)
+- Comments and documentation conventions
+- gofmt and enforced formatting (why?)
+- Code organization philosophy
 
 ## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "Basics And Syntax" topic
-
-## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
+- Be EXTREMELY detailed and theoretical
+- Always compare with C/C++
+- Explain the "WHY" behind every design choice
+- Examples embedded in same file as theory
+- Help learner understand language design tradeoffs
+- If a level (basic/intermediate/advanced) isn't needed, skip it
 
 ## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+Theoretical, comparative, design-focused. Think like a language designer explaining choices.

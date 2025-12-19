@@ -1,25 +1,30 @@
-# Task: Create Go Theory Content for File Io
+# Task: Create Go File I/O Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Explain Go's interface-based I/O design vs C/C++ file handling.
 
-## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "File Io" topic
+## What to Create
+Theory on:
+- os.File vs FILE* vs std::fstream
+- Interface-based design (io.Reader, io.Writer)
+- Composition through interfaces (elegant abstraction)
+- Defer for cleanup (vs RAII in C++)
+- Error handling in I/O (explicit returns)
+- Buffered I/O (bufio package)
+- Reading patterns: byte-by-byte, line-by-line, whole file
+- ioutil/os package functions
+- Path handling (vs C string manipulation)
+- Working with directories
+- File permissions (Unix-style)
+- Seeking and random access
+- io.Copy and composition
+
+## Design Philosophy
+- Interface composition elegance
+- How io.Reader/Writer enable powerful abstractions
+- Comparison with C++ iostreams complexity
+- Resource management with defer vs RAII
+- Error handling patterns in I/O
 
 ## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
-
-## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+Theory.md with I/O pattern examples and interface composition.

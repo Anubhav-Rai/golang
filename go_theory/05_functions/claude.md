@@ -1,25 +1,26 @@
-# Task: Create Go Theory Content for Functions
+# Task: Create Go Functions Theory
 
-## Context
-You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+## Your Mission
+Deep dive into Go functions and what's different from C/C++.
 
-## Requirements
-1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
-2. Each theory.md should be extremely detailed with:
-   - Go concepts explained in comparison to C/C++
-   - Why Go made specific design choices vs C/C++
-   - Language design philosophy explanations
-   - Code examples embedded in the same file
-3. Focus on "Functions" topic
+## What to Create
+Theory on:
+- Function syntax (return type after params - why this order?)
+- Multiple return values (built-in vs C++ tuple/pair hacks)
+- Named return values (clarity vs implicit behavior)
+- Error handling via returns (vs exceptions - huge design choice)
+- Variadic functions (vs C va_list, vs C++ variadic templates)
+- First-class functions (vs C function pointers, C++ std::function)
+- Closures (vs C++11 lambdas - similarities and differences)
+- NO default parameters (design choice - why?)
+- NO function overloading (design philosophy)
+- Defer in functions (cleanup patterns)
+
+## Critical Design Discussions
+- Why no overloading? (Complexity vs convenience)
+- How do multiple returns simplify error handling vs exceptions?
+- What are the tradeoffs of no default params?
+- How does this affect API design?
 
 ## Structure
-- basic/theory.md - Fundamental concepts
-- intermediate/theory.md - More complex topics (if applicable)
-- advanced/theory.md - Advanced topics (if applicable)
-
-## Style
-- Theoretical and detailed
-- Compare everything to C/C++
-- Explain WHY Go made different choices
-- Include examples inline with theory
-- Help learner understand language design principles
+Theory.md in basic/intermediate/advanced with inline examples.
