@@ -1,14 +1,24 @@
-# Topic 16: Testing
+# Testing - Working Context
 
-## Context
-Built-in testing - no external frameworks needed.
+This directory contains comprehensive Go learning materials for **Testing**.
 
 ## Structure
-- `basic/` - Test basics, table-driven tests
-- `intermediate/` - Benchmarks, examples, coverage
+
+- `basic/` - Fundamental concepts with C/C++ comparisons
+- `intermediate/` - Advanced usage and design patterns
+- `advanced/` - Deep dives and optimizations
+
+## Learning Approach
+
+Start with `basic/theory.md` which explains:
+- Core Go concepts
+- How they differ from C/C++
+- Why Go made these design choices
+- Practical examples throughout
+
+Progress to intermediate and advanced as you master basics.
 
 ## Key Focus
-- go test command
-- *_test.go files
-- Table-driven tests
-- Benchmarking
+
+Understanding **why** Go chose each design, not just **what** it is.
+Every feature is explained in comparison to C/C++ with design rationale.

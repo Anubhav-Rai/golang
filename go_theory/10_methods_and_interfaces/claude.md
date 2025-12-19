@@ -1,15 +1,24 @@
-# Topic 10: Methods and Interfaces
+# Methods and Interfaces - Working Context
 
-## Context
-Go's polymorphism - implicit interfaces, duck typing.
+This directory contains comprehensive Go learning materials for **Methods and Interfaces**.
 
 ## Structure
-- `basic/` - Methods, interfaces basics
-- `intermediate/` - Interface composition, type assertions
-- `advanced/` - Empty interface, interface internals
+
+- `basic/` - Fundamental concepts with C/C++ comparisons
+- `intermediate/` - Advanced usage and design patterns
+- `advanced/` - Deep dives and optimizations
+
+## Learning Approach
+
+Start with `basic/theory.md` which explains:
+- Core Go concepts
+- How they differ from C/C++
+- Why Go made these design choices
+- Practical examples throughout
+
+Progress to intermediate and advanced as you master basics.
 
 ## Key Focus
-- Methods on any type
-- Implicit interface implementation
-- Duck typing
-- No inheritance
+
+Understanding **why** Go chose each design, not just **what** it is.
+Every feature is explained in comparison to C/C++ with design rationale.

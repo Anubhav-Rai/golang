@@ -1,15 +1,24 @@
-# Topic 20: Advanced Patterns
+# Advanced Patterns - Working Context
 
-## Context
-Production-ready patterns and idioms.
+This directory contains comprehensive Go learning materials for **Advanced Patterns**.
 
 ## Structure
-- `basic/` - Functional options, context
-- `intermediate/` - Worker pools, pipelines
-- `advanced/` - Circuit breaker, rate limiting
+
+- `basic/` - Fundamental concepts with C/C++ comparisons
+- `intermediate/` - Advanced usage and design patterns
+- `advanced/` - Deep dives and optimizations
+
+## Learning Approach
+
+Start with `basic/theory.md` which explains:
+- Core Go concepts
+- How they differ from C/C++
+- Why Go made these design choices
+- Practical examples throughout
+
+Progress to intermediate and advanced as you master basics.
 
 ## Key Focus
-- Functional options
-- Context for cancellation
-- Worker pools
-- Production patterns
+
+Understanding **why** Go chose each design, not just **what** it is.
+Every feature is explained in comparison to C/C++ with design rationale.

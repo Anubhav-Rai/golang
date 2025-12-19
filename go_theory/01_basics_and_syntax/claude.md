@@ -1,15 +1,24 @@
-# Topic 01: Go Basics and Syntax
+# Basics and Syntax - Working Context
 
-## Context
-Learning Go program structure, syntax basics, comparing with C/C++.
+This directory contains comprehensive Go learning materials for **Basics and Syntax**.
 
 ## Structure
-- `basic/` - Hello world, program structure, basic syntax
-- `intermediate/` - Packages, imports, visibility, multiple files
-- `advanced/` - Build tags, compiler directives, cross-compilation
+
+- `basic/` - Fundamental concepts with C/C++ comparisons
+- `intermediate/` - Advanced usage and design patterns
+- `advanced/` - Deep dives and optimizations
+
+## Learning Approach
+
+Start with `basic/theory.md` which explains:
+- Core Go concepts
+- How they differ from C/C++
+- Why Go made these design choices
+- Practical examples throughout
+
+Progress to intermediate and advanced as you master basics.
 
 ## Key Focus
-- No semicolons, no headers
-- Package system vs C++ includes
-- Capitalization = visibility
-- defer keyword
+
+Understanding **why** Go chose each design, not just **what** it is.
+Every feature is explained in comparison to C/C++ with design rationale.

@@ -1,14 +1,24 @@
-# Topic 07: Maps
+# Maps - Working Context
 
-## Context
-Built-in hash maps - like C++ unordered_map but simpler.
+This directory contains comprehensive Go learning materials for **Maps**.
 
 ## Structure
-- `basic/` - Creating, accessing, deleting
-- `intermediate/` - Comma-ok idiom, iteration, maps as sets
+
+- `basic/` - Fundamental concepts with C/C++ comparisons
+- `intermediate/` - Advanced usage and design patterns
+- `advanced/` - Deep dives and optimizations
+
+## Learning Approach
+
+Start with `basic/theory.md` which explains:
+- Core Go concepts
+- How they differ from C/C++
+- Why Go made these design choices
+- Practical examples throughout
+
+Progress to intermediate and advanced as you master basics.
 
 ## Key Focus
-- Built-in hash maps
-- No ordered iteration
-- Comma-ok for existence check
-- Zero value is nil (can't use!)
+
+Understanding **why** Go chose each design, not just **what** it is.
+Every feature is explained in comparison to C/C++ with design rationale.

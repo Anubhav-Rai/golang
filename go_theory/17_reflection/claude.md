@@ -1,14 +1,24 @@
-# Topic 17: Reflection
+# Reflection - Working Context
 
-## Context
-Runtime type inspection - more powerful than C++ RTTI.
+This directory contains comprehensive Go learning materials for **Reflection**.
 
 ## Structure
-- `basic/` - reflect.Type, reflect.Value basics
-- `intermediate/` - Struct tags, type assertions
+
+- `basic/` - Fundamental concepts with C/C++ comparisons
+- `intermediate/` - Advanced usage and design patterns
+- `advanced/` - Deep dives and optimizations
+
+## Learning Approach
+
+Start with `basic/theory.md` which explains:
+- Core Go concepts
+- How they differ from C/C++
+- Why Go made these design choices
+- Practical examples throughout
+
+Progress to intermediate and advanced as you master basics.
 
 ## Key Focus
-- reflect package
-- Type and Value
-- Use sparingly (slow)
-- Struct tag reading
+
+Understanding **why** Go chose each design, not just **what** it is.
+Every feature is explained in comparison to C/C++ with design rationale.

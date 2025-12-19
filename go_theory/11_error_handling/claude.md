@@ -1,15 +1,24 @@
-# Topic 11: Error Handling
+# Error Handling - Working Context
 
-## Context
-No exceptions! Errors as values - explicit handling.
+This directory contains comprehensive Go learning materials for **Error Handling**.
 
 ## Structure
-- `basic/` - Error basics, if err != nil
-- `intermediate/` - Custom errors, wrapping
-- `advanced/` - panic/recover, sentinel errors
+
+- `basic/` - Fundamental concepts with C/C++ comparisons
+- `intermediate/` - Advanced usage and design patterns
+- `advanced/` - Deep dives and optimizations
+
+## Learning Approach
+
+Start with `basic/theory.md` which explains:
+- Core Go concepts
+- How they differ from C/C++
+- Why Go made these design choices
+- Practical examples throughout
+
+Progress to intermediate and advanced as you master basics.
 
 ## Key Focus
-- Errors are values
-- No try/catch
-- Multiple return values
-- Error wrapping
+
+Understanding **why** Go chose each design, not just **what** it is.
+Every feature is explained in comparison to C/C++ with design rationale.

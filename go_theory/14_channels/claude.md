@@ -1,15 +1,24 @@
-# Topic 14: Channels
+# Channels - Working Context
 
-## Context
-CSP model - communicate by sharing, not share by communicating.
+This directory contains comprehensive Go learning materials for **Channels**.
 
 ## Structure
-- `basic/` - Channel basics, send/receive
-- `intermediate/` - Buffered channels, select, close
-- `advanced/` - Patterns: pipeline, fan-out, cancellation
+
+- `basic/` - Fundamental concepts with C/C++ comparisons
+- `intermediate/` - Advanced usage and design patterns
+- `advanced/` - Deep dives and optimizations
+
+## Learning Approach
+
+Start with `basic/theory.md` which explains:
+- Core Go concepts
+- How they differ from C/C++
+- Why Go made these design choices
+- Practical examples throughout
+
+Progress to intermediate and advanced as you master basics.
 
 ## Key Focus
-- Channels for communication
-- Buffered vs unbuffered
-- select statement
-- Channel directions
+
+Understanding **why** Go chose each design, not just **what** it is.
+Every feature is explained in comparison to C/C++ with design rationale.
