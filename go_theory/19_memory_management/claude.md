@@ -1,24 +1,25 @@
-# Memory Management - Working Context
+# Task: Create Go Theory Content for Memory Management
 
-This directory contains comprehensive Go learning materials for **Memory Management**.
+## Context
+You are creating educational content for someone learning Go who has C/C++ background. They want to learn Go syntax AND language design choices.
+
+## Requirements
+1. Create theory.md files in basic/, intermediate/, and advanced/ subfolders (create subfolders if needed)
+2. Each theory.md should be extremely detailed with:
+   - Go concepts explained in comparison to C/C++
+   - Why Go made specific design choices vs C/C++
+   - Language design philosophy explanations
+   - Code examples embedded in the same file
+3. Focus on "Memory Management" topic
 
 ## Structure
+- basic/theory.md - Fundamental concepts
+- intermediate/theory.md - More complex topics (if applicable)
+- advanced/theory.md - Advanced topics (if applicable)
 
-- `basic/` - Fundamental concepts with C/C++ comparisons
-- `intermediate/` - Advanced usage and design patterns
-- `advanced/` - Deep dives and optimizations
-
-## Learning Approach
-
-Start with `basic/theory.md` which explains:
-- Core Go concepts
-- How they differ from C/C++
-- Why Go made these design choices
-- Practical examples throughout
-
-Progress to intermediate and advanced as you master basics.
-
-## Key Focus
-
-Understanding **why** Go chose each design, not just **what** it is.
-Every feature is explained in comparison to C/C++ with design rationale.
+## Style
+- Theoretical and detailed
+- Compare everything to C/C++
+- Explain WHY Go made different choices
+- Include examples inline with theory
+- Help learner understand language design principles
